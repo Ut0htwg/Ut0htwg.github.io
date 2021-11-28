@@ -1,0 +1,96 @@
+body {
+    /* margin: 2rem; */
+    padding: .1rem;
+    /* position: absolute; */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* align-items: center; */
+    background-color:rgb(51, 149, 182);
+    color: white;
+    /* justify-content: center; */
+}
+
+header {
+    display: block;
+    padding-top: 1rem;
+}
+
+h2, h3 {
+    text-align: center;
+    margin: .1rem auto;
+    padding: .1rem auto;
+}
+
+h3 {
+    font-size: 2.5vh;
+}
+
+.clock {
+    font-family: Cyberverse;
+    color: white;
+    font-size: 3vh;
+    text-align: center;
+    justify-content: center;
+    width: 12vw;
+    height: 5vh;
+    padding: auto;
+    margin: .5rem auto 2rem auto;       /* */
+    /* border: 1px solid #eee; */
+}
+
+@media screen and (min-width: 1024px) {
+    .clock {
+        margin: .5rem auto;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    /* padding: auto; */
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.card {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff99cc;
+    border-radius: 7px;
+    height: 9vh;                /* */
+    width: 8vw;
+    margin: .6rem .3rem;        /* */
+    padding: .3rem;
+    border: 1px solid #eee;
+    background-image: none;
+    font-size: 7vw;             /* */
+}
+
+@media screen and (min-width: 768px) {
+    .card {
+        height: 15vh;                /* */
+        margin: .6rem 1rem;        /* */
+        font-size: 6vw;             /* */
+    }
+}
+  
+@media screen and (min-width: 1024px) {
+    .card {
+        height: 20vh;                /* */
+        margin: .6rem 1rem;        /* */
+        font-size: 6vw;             /* */
+    }
+}
+.card-back {
+    background-image: url('original.jpg');
+    font-size: 0;
+}
